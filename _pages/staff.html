@@ -1,0 +1,47 @@
+---
+layout: custom
+title: Staff
+permalink: staff
+staff:
+- first: Bev
+  last: Gudex
+  title: Director
+  img: woman.svg
+  bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- first: Shirley
+  last: Rose
+  title: Team Lead
+  img: shirley-rose-photo.jpg
+  bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- first: Rhonda
+  last: Smith
+  img: rhonda-smith-photo.jpg
+  bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+---
+
+<div class="container" id="staff">
+{% for item in page.staff %}
+<div class="staff-row">
+	<div class="staff-photo">
+		<a href="#" id="{{ item.first }}-{{ item.last }}-return"></a>
+		<a href="#{{ item.first }}-{{ item.last }}-popup" class="button"><img src="/images/{{ item.img }}" id="{{ item.first }}-{{ item.last }}-photo" alt="{{ item.first }} {{ item.last }}"></a>
+		<div class="overlay" id="{{ item.first }}-{{ item.last }}-popup">
+			<div class="popup">
+				<a class="close" href="#{{ item.first }}-{{ item.last }}-return">&times;</a>
+				
+				<figure>
+					<img class="content" src="/images/{{ item.first }}-{{ item.last }}-photo.jpg" id="{{ item.first }}-{{ item.last }}-photo" alt="{{ item.first }} {{ item.last }}">
+					<figcaption>{{ item.first }} {{ item.last }}, {{ item.title }}</figcaption>
+				</figure>
+
+			</div>
+		</div>
+	</div>
+	<div class="staff-bio">
+		<h3>{{ item.first }} {{ item.last }}</h3>
+		<p>{{ item.bio }}</p>
+	</div>
+</div>
+
+{% endfor %}
+</div>

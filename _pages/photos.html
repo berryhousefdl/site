@@ -1,0 +1,54 @@
+---
+layout: custom
+title: Welcome to our homes
+permalink: photos
+---
+<div class="container homes">
+	<h2>{{ page.title}}</h2>
+	<h3>Berry House</h3>
+	<div class="photo-collection" id="berryhouse">
+		<div class="box a">
+			<a href="#" id="kitchen-return"></a>
+			<a href="#kitchen-popup" class="button"><img src="/images/kitchen.jpg" alt="Berry House Kitchen"></a>
+			<div class="overlay" id="kitchen-popup">
+			<div class="popup">
+				<a class="close" href="#kitchen-return">&times;</a>
+					<img class="content" src="/images/kitchen.jpg" id="{{ item.first }}-{{ item.last }}-photo" alt="Berry House Kitchen">
+			</div>
+		</div>
+		</div>
+
+		<div class="box b">
+			<a href="#" id="bedroom-return"></a>
+			<a href="#bedroom-popup" class="button"><img src="/images/bedroom.jpg" id="bedroom" alt="Berry House Bedroom"></a>
+			<div class="overlay" id="bedroom-popup">
+			<div class="popup">
+				<a class="close" href="#bedroom-return">&times;</a>
+					<img class="content" src="/images/bedroom.jpg" id="bedroom-1" alt="Berry House Bedroom">
+			</div>
+		</div>
+		</div>
+
+		<div class="box c">
+			<a href="#" id="living-room-return"></a>
+			<a href="#living-room-popup" class="button"><img src="/images/living-room.jpg" id="living-room" alt="Berry House Living Room"></a>
+			<div class="overlay" id="living-room-popup">
+			<div class="popup">
+				<a class="close" href="#living-room-return">&times;</a>
+					<img class="content" src="/images/living-room.jpg" id="living-room-1" alt="Berry House Living Room">
+			</div>
+		</div>
+		</div>
+
+		<div class="box d">
+			<a href="#" id="dining-room-return"></a>
+			<a href="#dining-room-popup" class="button"><img src="/images/dining-room.jpg" id="dining-room" alt="Berry House Dining Room"></a>
+			<div class="overlay" id="dining-room-popup">
+			<div class="popup">
+				<a class="close" href="#dining-room-return">&times;</a>
+					<img class="content" src="/images/dining-room.jpg" id="dining-room-1" alt="Berry House Dining Room">
+			</div>
+		</div>
+		</div>
+	</div>
+</div>

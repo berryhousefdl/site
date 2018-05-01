@@ -1,0 +1,21 @@
+# General Information
+title: Berry House
+author: Daniel Schultz
+email:
+description: > # this means to ignore newlines until "baseurl:"
+# Build settings
+url: http://127.0.0.1:4000/
+permalink: pretty
+# SASS directory
+sass:
+    sass_dir: _sass
+# Custom pages directory to keep root directory uncluttered
+include: ['_pages']
+# Markdown
+markdown: kramdown
+# GitHub flavored Markdown
+input: GFM
+# Exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
