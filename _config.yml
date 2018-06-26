@@ -4,7 +4,7 @@ author: Daniel Schultz
 email:
 description: > # this means to ignore newlines until "baseurl:"
 # Build settings
-url: http://berryhousefdl.github.io
+url: http://berryhousefdl.com
 permalink: pretty
 # SASS directory
 sass:
