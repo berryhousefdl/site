@@ -79,11 +79,11 @@ hr {
   transition: 500ms; }
 
 footer {
-  background-color: #f7f7f7;
-  padding: 25px; }
+  background-color: #f7f7f7; }
 
 footer p {
-  text-align: center; }
+  text-align: center;
+  font-size: 85%; }
 
 /* ##########  STAFF  ########## */
 #staff {

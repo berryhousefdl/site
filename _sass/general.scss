@@ -79,11 +79,11 @@ hr {
   transition: 500ms; }
 
 footer {
-  background-color: #f7f7f7;
-  padding: 25px; }
+  background-color: #f7f7f7; }
 
 footer p {
-  text-align: center; }
+  text-align: center;
+  font-size: 85%; }
 
 /* ##########  STAFF  ########## */
 #staff {
@@ -235,4 +235,20 @@ div.popup figure {
 
 .popup img {
     width: initial !important;
+}
+
+/* ####################### REMEMBER TO REMOVE THIS IN PRODUCTION ####################### */
+
+.logo-options {
+  width: 100%;
+  max-width: 1000px;
+}
+.logo-sample {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.logo-options img:nth-of-type(4) {
+  margin-left: -5%;
 }
